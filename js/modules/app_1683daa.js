@@ -1,0 +1,1 @@
+define("js/modules/app",function(e,o,s){var t=e("js/modules/home/home"),u=e("js/modules/list/list"),m=e("js/modules/product/product");Vue.component("home",t),Vue.component("list",u),Vue.component("product",m);var p=new Vue({el:"#app",data:{view:"list",mykey:"",searchkey:"",query:[]}});s.exports=p});

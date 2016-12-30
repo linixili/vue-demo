@@ -1,0 +1,1 @@
+define("js/filter/filter",function(){Vue.filter("price",function(e){return"¥"+e})});

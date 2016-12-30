@@ -1,0 +1,49 @@
+{
+	"errno": 0,
+	"data": {
+		"productcarousel":[
+			{
+				"title":"CQ-智利甜心樱桃",
+				"id":"1",
+				"secondtitle":"冷链护送 现货直达",
+				"url":"1-370x370-14332-1HXXH6KA.jpg",
+				"price":"188",
+				"weight":"2斤"
+			},
+			{
+				"title":"云南蒙石榴",
+				"id":"2",
+				"secondtitle":"永葆青春的秘密",
+				"url":"1-370x370-12713-D9UKK9W8.jpg",
+				"price":"39.9",
+				"weight":"8个"
+			},
+			{
+				"title":"金蜜香芒果",
+				"id":"3",
+				"secondtitle":"细嫩靓黄恰蜜甜",
+				"url":"1-370x370-13832-6W41TY55.jpg",
+				"price":"39.9",
+				"weight":"2斤"
+			},
+			{
+				"title":"阳光小番茄",
+				"id":"1",
+				"secondtitle":"捏在手里的“阳关茄”",
+				"url":"1-370x370-14325-9U9HT165.jpg",
+				"price":"19.9",
+				"weight":"400g*2"
+			},
+			{
+				"title":"新疆纸皮核桃",
+				"id":"1",
+				"secondtitle":"软妹都能捏的开的核桃",
+				"url":"1-370x370-14126-49RD7224.jpg",
+				"price":"39.9",
+				"weight":"1斤"
+			}
+		],
+		"bibuy":["active_57df5e644e28f.jpg","active_57df5e799a8d0.jpg","active_57df5e8014a16.jpg"]
+		
+	}
+}

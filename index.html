@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天天果园</title>
+	<meta content='initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width' name='viewport'>
+	
+
+    <link rel="stylesheet" href="/static/pkg/css/app_ef0e160.css" />
+    <style type="text/css">
+		.loading{
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			position:fixed;
+			z-index:999;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading" id="loading"></div>
+	<div id="app" style="display:none;">
+		<component v-bind:is="view"></component>
+		<div class="totop">返回<br>顶部</div>
+	</div>
+	<script type="text/template" id="home_tpl" class='home_tpl'>
+
+		<section id="home_item" class="home_item">
+		<div class="carousel clearfix swiper-container" id="carousel">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" v-for='item in type'>
+						<img v-bind:src="'images/homecarousel/'+item.url" >
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+		</div>
+		<div class="header clearfix">
+			<span class="address">北京<span class="arrow"></span></span>
+			<div class="search">
+				<input type="text" placeholder='新鲜水果、生鲜'>
+				<i><img src="/images/search.jpg"></i>
+			</div>
+		</div>
+		<div class="littlesection clearfix">
+			
+				<img src="/images/letters.png" alt="">
+				<span>智利蓝莓88元购两盒赠两盒</span>
+			
+		</div>
+		<div class="list_shop clearfix">
+			<ul>
+				<li v-for='item in type_list'>
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homelist/'+item.url" alt="">
+						<span>{{item.title}}</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="pd  clearfix">
+			<div class="action" >
+				<a href="javascript:void(0);"><img src="/images/dca8bd5c5f20cdbe8d2876c23dc8b885.jpg" alt=""></a>
+			</div>
+			<div class='mg'>
+				<div class="best">
+					<a href="javascript:void(0);"><img src="/images/c3be5d63c684ddb99323b873694fc1f6.jpg" alt=""></a>
+				</div>
+				<div class="crazy">
+					<a href="javascript:void(0);"><img src="/images/3a41d42b18a398bc6c64bd2ae5086345.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="newp  clearfix" >
+		<a href="#/list/1">
+				<span class='new'>新品抢鲜&nbsp;<span class='arrow '></span></span>
+				</a>
+		</div>
+		<div class="fingercarousel clearfix swiper-container1"  >
+        <div class="swiper-wrapper">
+				<div class="swiper-slide" v-for='item in productcarousel' v-on:click="goproduct()">
+					<a href="javascript:void(0);">
+						<span class="title">{{item.title}}</span>
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="secondtitle">{{item.secondtitle}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+			</div>
+			 <!-- <div class="swiper-pagination"></div> -->
+		</div>
+		<div class="newp  clearfix" >
+
+			<a href="#/list/1">
+				
+				<span class='new'>进店必buy&nbsp;<span class='arrow '>
+			</span></span>
+
+			</a>
+		</div>
+		<div class="oneyou clearfix">
+					<div class="inner">
+					<a href="javascript:void(0);">
+						<img v-bind:src="oneyou.url" alt="">
+						<span class="title">{{oneyou.title}}</span>
+						<span class="secondtitle">{{oneyou.secondtitle}}</span>
+						<span class="xinke">新客特惠</span>
+						<span class="price">{{oneyou.price |price}}</span>/<span class="weight">{{oneyou.weight}}</span>
+					</a>
+					</div>
+		</div>
+		<div class="fingercarousel1  swiper-container1 clearfix" >
+        <div class="swiper-wrapper">
+				<div v-for='item in productcarousel1'  class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+		</div>
+		</div>
+		<div class="newp1  clearfix" >精选专题</div>
+		<div class="action">
+			<a href="javascript:void(0);"><img src="/images/80809c37cd103f9c915f1bfe0c16faa2.jpg" alt=""></a>
+		</div>
+		<div class="fingercarousel1  swiper-container1 clearfix" >
+        <div class="swiper-wrapper">
+				<div v-for='item in productcarousel2' " class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="action">
+			<a href="javascript:void(0);"><img src="/images/c4ab94507f06fc9b97cf8ce7784e453d.jpg" alt=""></a>
+		</div>
+		<div class="fingercarousel1  swiper-container1 clearfix" >
+        <div class="swiper-wrapper">
+				<div v-for='item in productcarousel3' class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="action">
+			<a href="javascript:void(0);"><img src="/images/46c4dc545535a49e41c2fbb2680f2856.jpg" alt=""></a>
+		</div>
+		<div class="fingercarousel1  swiper-container1 clearfix" >
+        <div class="swiper-wrapper">
+				<div v-for='item in productcarousel4' class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="action">
+			<a href="javascript:void(0);"><img src="/images/26a737bfec32d93b8601d3aa359b4ccd.jpg" alt=""></a>
+		</div>
+		<div class="fingercarousel1  swiper-container1 clearfix" >
+        <div class="swiper-wrapper">
+				<div v-for='item in productcarousel5' class="swiper-slide">
+					<a href="javascript:void(0);">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span>
+					</a>
+				</div>
+			</div>
+			</div>
+		</div>	
+		</section>
+	</script>
+	<script type="text/template" id="product_tpl" class="product_tpl">
+		<section id='product_item' class="product_item">
+			<header>
+				<div class='home'  v-on:click="goHome"><a href="javascript:void(0);"><img src="/images/product/2016-11-20_133410.png" alt=""></a></div>
+				<div class="go-back" v-on:click="goBack"><span class="arrow"><span class="arrow white"></span></span></div>
+				<h2>产品详情</h2>
+				<div class="shop"><a href="javascript:void(0);"><img src="/images/product/2016-11-20_133443.png" alt=""></a></div>
+				<div class="login"><a href="javascript:void(0);"><img src="/images/product/2016-11-20_133454.png" alt=""></a></div>
+			</header>
+
+			<div class="Pcarousel clearfix swiper-container2" id="Pcarousel">
+				<div class="swiper-wrapper">
+					<div v-for='item in typeproduct' class="swiper-slide">
+						<img v-bind:src="'images/product/'+item.url" alt="">
+					</div>
+				</div>
+					<div class="swiper-pagination"></div>
+			</div>
+		<div class="form">
+			<h3>{{yingtao.title}}</h3>
+			<h4>{{yingtao.subtitle}}</h4>
+			<span class="price">{{yingtao.price|price}}</span>
+			<span class="delete" v-on:click="removepics">-</span>
+			<span class="piece">1</span>
+			<span class="add" v-on:click="addpics">+</span>
+			<button class="inshop">加入购物车</button>
+			<button class="gobuy">立即购买</button>
+		</div>
+		<div class="describemessage">详细信息</div>
+		<div class="describe">
+			<ul>
+				<li><span class="left">产地</span>
+				<span class="place">{{yingtao.place}}</span></li>
+				<li><span class="left">销售规格</span>
+				<span class="place">{{yingtao.size}}</span></li>
+				<li><span class="left">储存方法</span>
+				<span class="place">{{yingtao.method}}</span></li>
+				<li><span class="left">营养元素</span>
+				<span class="place">{{yingtao.goodthing}}</span></li>
+			</ul>
+		</div>
+		<div class="desimage clearfix" id="desimage">
+			<ul class="imageList">
+				<li v-for='item in yingtao.desimage'>
+					<img v-bind:src="'images/product/'+item" alt="">
+				</li>
+			</ul>
+		</section>
+	</script>
+	<script type="text/template" id="list_tpl" class="list_tpl">
+		<section id='list_item' class="list_item">
+		<div class="go-back" v-on:click="goBack">
+			<img src="/images/backback.png" alt="">
+		</div>
+			<div class="action clearfix">
+				<ul class="imageList" >
+					<li v-for='item in typelist'>
+						<a href="javascript:void(0);"><img v-bind:src="'images/list/'+item" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="listdemo clearfix" id="listdemo">
+			<ul class="unit">
+				<li v-for='item in listdemo'>
+					<a href="#/product/{{item.id}}">
+						<img v-bind:src="'images/homecarousel/'+item.url" alt="">
+						<span class="title">{{item.title}}</span>
+						<span class="subtitle">{{item.secondtitle}}</span>
+						<span class="bigbox"><span class="price">{{item.price |price}}</span>/<span class="weight">{{item.weight}}</span></span>
+						<div class="btn">加入购物车</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</section>
+	</script>
+
+<script type="text/javascript" src="/js/mod_3caaa06.js"></script>
+<script type="text/javascript" src="/static/pkg/js/app_579539d.js"></script>
+<script type="text/javascript" src="/static/pkg/js/lib_46e6ea8.js"></script>
+<script type="text/javascript">
+	setTimeout(function(){
+		$('.loading').fadeOut(100);
+	},300)
+	function set(){
+			var w = document.documentElement.clientWidth;
+			if(w > 667){
+				w = 667;
+			}else if(w < 320){
+				w = 320;
+			}
+			var rate = w / 667;
+			document.documentElement.style.fontSize = 40 * rate + "px";
+		}
+		set();
+		window.onresize = set;
+		$(window).on('scroll',function(){
+			if($(window).scrollTop()>200){
+				$('.totop').show();
+			}else{
+				$(".totop").hide();
+			}
+		})
+		$('.totop').click(function(){
+			window.scrollTo(0,0);
+		})
+	var a=require("js/bootstrap");
+	a();
+	</script>
+</body>
+</html>

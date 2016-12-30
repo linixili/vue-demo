@@ -1,0 +1,1 @@
+define("js/bootstrap",function(o,t,e){var r=o("js/route/route");e.exports=r});

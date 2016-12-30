@@ -1,0 +1,1 @@
+define("js/tools/util",function(e,t,n){var a={ajax:function(e,t){var n=new XMLHttpRequest;n.onreadystatechange=function(){if(4==n.readyState&&200==n.status){var e=JSON.parse(n.responseText);t&&t(e)}},n.open("GET",e,!0),n.send(null)},tpl:function(e){return document.getElementById(e).innerHTML}};n.exports=a});

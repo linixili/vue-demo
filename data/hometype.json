@@ -1,0 +1,334 @@
+{
+	"errno": 0,
+	"data": {
+		"type": [
+			{
+				"title": "天天农场",
+				"id": "1",
+				"url": "25aae46d320ada00605b9ea0363b53e0.png"
+			},
+			{
+				"title": "摇一摇",
+				"id": "2",
+				"url": "c02180ee4706b2f71c47bcff90f7b8e3.png"
+			},
+			{
+				"title": "积分签到",
+				"id": "3",
+				"url": "d32bb45026e06c102c71881d22661f8f.png"
+			},
+			{
+				"title": "积分猜猜乐",
+				"id": "4",
+				"url": "da6ce2864d105e6925cd8272d6c83e29.png"
+			},
+			{
+				"title": "积分兑换",
+				"id": "5",
+				"url": "a0ffd0e09d2971a0fff817b8719064c9.png"
+			},
+			{
+				"title": "超级团",
+				"id": "6",
+				"url": "999485d36bed652feff381dd427ae19f.png"
+			},
+			{
+				"title": "充值有礼",
+				"id": "7",
+				"url": "e2573b01fdc4eee1ee5ca894faf7d93a.png"
+			},
+			{
+				"title": "省心订",
+				"id": "8",
+				"url": "2470e3d293980bbe95534114592dd378.png"
+			}
+		],
+		"productcarousel":[
+			{
+				"title":"CQ-智利甜心樱桃",
+				"id":"1",
+				"secondtitle":"冷链护送 现货直达",
+				"url":"1-370x370-14332-1HXXH6KA.jpg",
+				"price":"188",
+				"weight":"2斤"
+			},
+			{
+				"title":"青皮甘蔗",
+				"id":"2",
+				"secondtitle":"甘蔗便捷装 甜度刚刚好",
+				"url":"1-370x370-14483-RHFD2YYF.jpg",
+				"price":"19.9",
+				"weight":"5根"
+			},
+			{
+				"title":"南风橘",
+				"id":"3",
+				"secondtitle":"入口甜 甜无渣",
+				"url":"1-370x370-14056-KFA5CHB2.jpg",
+				"price":"39",
+				"weight":"4斤"
+			},
+			{
+				"title":"阳光小番茄",
+				"id":"4",
+				"secondtitle":"捏在手里的“阳关茄”",
+				"url":"1-370x370-14325-9U9HT165.jpg",
+				"price":"19.9",
+				"weight":"400g*2"
+			},
+			{
+				"title":"新疆纸皮核桃",
+				"id":"5",
+				"secondtitle":"软妹都能捏的开的核桃",
+				"url":"1-370x370-14126-49RD7224.jpg",
+				"price":"39.9",
+				"weight":"1斤"
+			}
+		],
+		"productcarousel1":[
+			{
+				"title":"金蜜香芒果",
+				"id":"1",
+				"url":"1-370x370-13832-6W41TY55.jpg",
+				"price":"39.9",
+				"weight":"2斤"
+			},
+			{
+				"title":"冰糖心",
+				"id":"2",
+				"url":"1-370x370-14339-XUA3712C.jpg",
+				"price":"59",
+				"weight":"5斤"
+			},
+			{
+				"title":"荷兰青啤梨",
+				"id":"3",
+				"url":"1-370x370-14444-K4YD97PU.jpg",
+				"price":"39",
+				"weight":"4个"
+			},
+			{
+				"title":"智利蓝莓",
+				"id":"4",
+				"url":"1-370x370-7154-R6A2SAAX.jpg",
+				"price":"78",
+				"weight":"2+2盒"
+			},
+			{
+				"title":"阿根廷雪花鲳鱼",
+				"id":"5",
+				"url":"1-370x370-7918-4TT5S7F7.jpg",
+				"price":"29.9",
+				"weight":"300-400g"
+			},
+			{
+				"title":"乌拉圭草饲牛尾",
+				"id":"6",
+				"url":"1-370x370-10122-BT78FHK7.jpg",
+				"price":"42",
+				"weight":"350g"
+			}
+		],
+		"productcarousel2":[
+			{
+				"title":"巴西精选牛腩块",
+				"id":"1",
+				"url":"1-370x370-10122-BT78FHK7.jpg",
+				"price":"32.9",
+				"weight":"500g"
+			},
+			{
+				"title":"新西兰羊蝎子",
+				"id":"2",
+				"url":"1-370x370-11292-K24B7KY9.jpg",
+				"price":"32.9",
+				"weight":"600g"
+			},
+			{
+				"title":"苏食乌骨鸡",
+				"id":"3",
+				"url":"1-370x370-8264-TUTB2226.jpg",
+				"price":"46",
+				"weight":"1200g"
+			},
+			{
+				"title":"上海崇明老麻鸭",
+				"id":"4",
+				"url":"1-370x370-5605-YC95PCUB.jpg",
+				"price":"136",
+				"weight":"900g"
+			},
+			{
+				"title":"沙地红蜜薯",
+				"id":"5",
+				"url":"1-370x370-12326-F176H7WU.jpg",
+				"price":"19.8",
+				"weight":"3斤"
+			},
+			{
+				"title":"新疆雪梨",
+				"id":"6",
+				"url":"1-370x370-13542-P5F35UUX.jpg",
+				"price":"39",
+				"weight":"4斤"
+			},
+			{
+				"title":"白萝卜",
+				"id":"7",
+				"url":"1-370x370-7173-2PHA4CB2.jpg",
+				"price":"6.9",
+				"weight":"500g"
+			}
+		],
+		"productcarousel3":[
+			{
+				"title":"兰特全脂牛奶",
+				"id":"1",
+				"url":"1-370x370-12909-56TRCPFX.jpg",
+				"price":"99",
+				"weight":"2箱"
+			},
+			{
+				"title":"南翔小笼包",
+				"id":"2",
+				"url":"1-370x370-12207-YBU9PFAF.jpg",
+				"price":"9.9",
+				"weight":"8个"
+			},
+			{
+				"title":"避风塘奶黄包",
+				"id":"3",
+				"url":"1-370x370-12174-3RF8UT52.jpg",
+				"price":"10.9",
+				"weight":"210g"
+			},
+			{
+				"title":"安井原味手抓饼",
+				"id":"4",
+				"url":"1-370x370-13501-S4ACX5TC.jpg",
+				"price":"19.9",
+				"weight":"900g"
+			},
+			{
+				"title":"安井黄金糕",
+				"id":"5",
+				"url":"1-370x370-13842-TTT3KCTW.jpg",
+				"price":"10.9",
+				"weight":"250g"
+			},
+			{
+				"title":"思念全素春卷",
+				"id":"6",
+				"url":"1-370x370-12208-UCDU4S28.jpg",
+				"price":"9.9",
+				"weight":"240g"
+			}
+			
+		],
+		"productcarousel4":[
+			{
+				"title":"新西兰牛脊骨",
+				"id":"1",
+				"url":"1-370x370-13919-DK8XH1P8.jpg",
+				"price":"29.9",
+				"weight":"500g"
+			},
+			{
+				"title":"加拿大北极甜虾",
+				"id":"2",
+				"url":"1-370x370-5263-5K7AH986.jpg",
+				"price":"36",
+				"weight":"400g"
+			},
+			{
+				"title":"精选新鲜鹌鹑蛋",
+				"id":"3",
+				"url":"1-370x370-9767-R8PBBWP9.jpg",
+				"price":"14.8",
+				"weight":"24个"
+			},
+			{
+				"title":"加拿大谷饲肥牛卷",
+				"id":"4",
+				"url":"1-370x370-6779-98XPAARK.jpg",
+				"price":"39",
+				"weight":"250g"
+			},
+			{
+				"title":"铁棍山药",
+				"id":"5",
+				"url":"1-370x370-5522-KXUUTH55.jpg",
+				"price":"14.9",
+				"weight":"250g"
+			},
+			{
+				"title":"东海鱿鱼花",
+				"id":"6",
+				"url":"1-370x370-5429-XBT7HF3H.jpg",
+				"price":"19",
+				"weight":"200g"
+			}
+			
+		],
+		"productcarousel5":[
+			{
+				"title":"优质青虾仁",
+				"id":"1",
+				"url":"1-370x370-7883-UH229HBD.jpg",
+				"price":"39.9",
+				"weight":"200g*2"
+			},
+			{
+				"title":"阿拉斯加鳕鱼",
+				"id":"2",
+				"url":"1-370x370-8932-CSWPU2K5.jpg",
+				"price":"46",
+				"weight":"300g"
+			},
+			{
+				"title":"东海优选带鱼段",
+				"id":"3",
+				"url":"1-370x370-4895-A85WXPTH.jpg",
+				"price":"29",
+				"weight":"400g"
+			},
+			{
+				"title":"鲜冻三文鱼块",
+				"id":"4",
+				"url":"1-370x370-7154-R6A2SAAX.jpg",
+				"price":"55",
+				"weight":"250g"
+			},
+			{
+				"title":"阿根廷雪花鲳鱼",
+				"id":"5",
+				"url":"1-370x370-7918-4TT5S7F7.jpg",
+				"price":"29.9",
+				"weight":"300-400g"
+			},
+			{
+				"title":"越南巴沙鱼柳",
+				"id":"6",
+				"url":"1-370x370-10122-BT78FHK7.jpg",
+				"price":"24.9",
+				"weight":"400g"
+			},
+			{
+				"title":"东海小黄鱼",
+				"id":"6",
+				"url":"1-370x370-4841-79KU2C3W.jpg",
+				"price":"19",
+				"weight":"350g"
+			}
+		],
+		"oneyou":{
+				"title":"琯溪白玉蜜柚",
+				"id":"1",
+				"secondtitle":"新人福利两个更超值",
+				"url":"images/homecarousel/1-370x370-13542-P5F35UUX.jpg",
+				"price":"2",
+				"weight":"2个"
+		}
+		
+	}
+}
